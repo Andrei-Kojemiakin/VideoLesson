@@ -6,9 +6,12 @@ public class Human {
     BankAccount ba;
 
 
+
     void info(){
         System.out.println("Imya: "+name+" " + " Cvet mashini: "+car.color+" Balans bankovskogo sheta: "+ba.balance);
+
     }
+
 
 }
 
@@ -19,7 +22,9 @@ class  HumanTest{
         h.name ="Vasili";
         h.car= new Car3("red", "V8");
         h.ba= new BankAccount(18,200.5);
-       h.info();
+
+        h.info();
+
     }
 }
 
@@ -34,13 +39,35 @@ class Car3 {
 }
 
 class BankAccount{
+
+    double uvelichenie;
     BankAccount(int id2, double balance2){
+
+
         id=id2;
         balance=balance2;
     }
     int id;
     double balance;
 
+   double PopolnenieScheta(double uvelichenie){
+       balance += uvelichenie;
+       return balance;
+
+
+   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
