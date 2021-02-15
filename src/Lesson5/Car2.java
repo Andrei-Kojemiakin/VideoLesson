@@ -1,14 +1,14 @@
 package Lesson5;
 
-  public class Car2 {
+  public class Car2 { //создали класс Car2.
 
-    String color;
+    String color; // Создали переменные класса Car2.
     String engine;
     int speed;
 
-    int gaz(int skorost) {
-      speed += skorost;
-      return speed;
+    int gaz(int skorost) {   // Создали метод gaz с типом данных int, с переменной skorost типа int,
+      speed += skorost;      // Сложили значенеия переременной класса speed и переменной метода skorost. Результат присвоили переменной класса speed.
+      return speed;          // Вернули переменную класса speed.
     }
 
     int tormoz(int skorost) {

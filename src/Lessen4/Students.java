@@ -5,49 +5,52 @@ public class Students {
     int StudID;
     String Fname,Sname,YearStuding;
     float AvReitengM,AvReitengE,AvReitengL;
-    double AvReiteng=1.0;
+    double AvReiteng;
 }
 
 class StudentsTest{
 
+    double middleGrade(Students st){
+        double AvReiteng = (st.AvReitengM + st.AvReitengE + st.AvReitengL)/3;
+        System.out.println(" Средняя оценка студента " + st.Sname +st.Fname + ": " + AvReiteng);
+        return AvReiteng;
+    }
+
  public static void main(String[] args) {
 
-     Students VasiliTerkin = new Students();
-     Students GrigoriLeps = new Students();
-     Students DickCocongton = new Students();
+     Students st1 = new Students();
+     st1.StudID=12;
+     st1.Fname="Terkin";
+     st1.Sname="Vasili";
+     st1.YearStuding="2018s.y.";
+     st1.AvReitengM=7;
+     st1.AvReitengE=9;
+     st1.AvReitengL=6;
 
-      VasiliTerkin.StudID=12;
-      VasiliTerkin.Fname="Terkin";
-      VasiliTerkin.Sname="Vasili";
-      VasiliTerkin.YearStuding="2018s.y.";
-      VasiliTerkin.AvReitengM=7;
-      VasiliTerkin.AvReitengE=9;
-      VasiliTerkin.AvReitengL=6;
+     Students st2 = new Students();
+     st2.StudID=14;
+     st2.Fname="Leps";
+     st2.Sname="Grigori";
+     st2.YearStuding="2019s.y.";
+     st2.AvReitengM=5;
+     st2.AvReitengE=7;
+     st2.AvReitengL=8;
 
-     VasiliTerkin.AvReiteng=(VasiliTerkin.AvReitengM+VasiliTerkin.AvReitengE+VasiliTerkin.AvReitengL)/3;
-     System.out.println("Средний бал Васи " +VasiliTerkin.AvReiteng);
+     Students st3 = new Students();
+     st3.StudID=13;
+     st3.Fname="Cocongton";
+     st3.Sname="Dick";
+     st3.YearStuding="2019s.y.";
+     st3.AvReitengM=8;
+     st3.AvReitengE=9;
+     st3.AvReitengL=8;
 
-      GrigoriLeps.StudID=14;
-      GrigoriLeps.Fname="Leps";
-      GrigoriLeps.Sname="Grigori";
-      GrigoriLeps.YearStuding="2019s.y.";
-      GrigoriLeps.AvReitengM=5;
-      GrigoriLeps.AvReitengE=7;
-      GrigoriLeps.AvReitengL=8;
+     StudentsTest sTest = new StudentsTest();
+     sTest.middleGrade(st1);
+     sTest.middleGrade(st2);
+     sTest.middleGrade(st3);
 
-     GrigoriLeps.AvReiteng=(GrigoriLeps.AvReitengM+GrigoriLeps.AvReitengE+GrigoriLeps.AvReitengL)/3;
-     System.out.println("Средний бал Грыши " +GrigoriLeps.AvReiteng);
 
-     DickCocongton.StudID=13;
-     DickCocongton.Fname="Cocongton";
-     DickCocongton.Sname="Dick";
-     DickCocongton.YearStuding="2019s.y.";
-     DickCocongton.AvReitengM=8;
-     DickCocongton.AvReitengE=9;
-     DickCocongton.AvReitengL=8;
-
-     DickCocongton.AvReiteng=(DickCocongton.AvReitengM+DickCocongton.AvReitengE+DickCocongton.AvReitengL)/3;
-     System.out.println("Средний бал Дика " +DickCocongton.AvReiteng);
 
      //AvReiteng=(AvReitengM+AvReitengE+AvReitengL)/3;
    //System.out.println(AvReiteng);
