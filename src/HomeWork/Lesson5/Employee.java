@@ -15,8 +15,8 @@ public class Employee {
 
 
     double wagesIncrease() {
-        salary= salary*2;
-        return salary;
+        return salary *= 2;
+
 
     }
 
