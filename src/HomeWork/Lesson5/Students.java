@@ -12,7 +12,8 @@ class StudentsTest{
 
     double middleGrade(Students st){
         double AvReiteng = (st.AvReitengM + st.AvReitengE + st.AvReitengL)/3;
-        System.out.println(" Средняя оценка студента " + st.Sname +st.Fname + ": " + AvReiteng);
+        int a=(int)Math.round(AvReiteng); // Усечение рациональных чисел до целых
+        System.out.println(" Средняя оценка студента " + st.Sname +st.Fname + ": " + a);
         return AvReiteng;
     }
 
