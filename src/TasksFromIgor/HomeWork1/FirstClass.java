@@ -3,10 +3,10 @@ package TasksFromIgor.HomeWork1;
 public class FirstClass {
 
        public FirstClass(int a1, int b1, String c1){
-
+this.a1=a1;
+this.b1=b1;
+this.c1=c1;
   }
-
-
         int a1,b1;
        String c1;
 

@@ -3,7 +3,8 @@ package TasksFromIgor.HomeWork1;
  public class SecondClass {
 
    public SecondClass(int e, int d ){
-
+this.e=e;
+this.d=d;
    }
 
 
