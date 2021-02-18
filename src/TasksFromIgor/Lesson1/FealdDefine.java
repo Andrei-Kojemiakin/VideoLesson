@@ -1,4 +1,4 @@
-package TasksFromIgor;
+package TasksFromIgor.Lesson1;
 
 
 // Создать класс в нём два поля Int и String. Создать объект этого класса в котором значение переменной Int =25 Strintg= "JAVA"

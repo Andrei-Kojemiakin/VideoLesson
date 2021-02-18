@@ -1,6 +1,4 @@
-package TasksFromIgor;
-
-import TasksFromIgor.FealdDefine;
+package TasksFromIgor.Lesson1;
 
 public class New {
 
@@ -14,8 +12,8 @@ public class New {
     public static void main(String[] args) {
 
         FealdDefine fealdDefine1= new FealdDefine(12,"Java12");
-       // fealdDefine1.setA(25);
-       // fealdDefine1.setB("Java");
+        //fealdDefine1.setA(25);
+       //fealdDefine1.setB("Java");
 
         System.out.println(fealdDefine1.getA());
         System.out.println(fealdDefine1.getB());
